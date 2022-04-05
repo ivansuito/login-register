@@ -11,7 +11,7 @@ bool IsLogged()
     cout << "Nombre de usuario: "; cin >> username;
     cout << "Pasword: "; cin >> password;
 
-    ifstream read("C:/Users/eldel/OneDrive/Escritorio/login-register/" +  username + ".txt");
+    ifstream read("/**PATH**/" +  username + ".txt");
     getline(read, us);
     getline(read, pw);
 
@@ -35,7 +35,7 @@ int main()
         cout << "Password: "; cin >> password;
 
         ofstream file;
-        file.open("C:/Users/eldel/OneDrive/Escritorio/login-register/" + username + ".txt");
+        file.open("/**PATH**/" + username + ".txt");
         file << username << endl << password; 
         file.close();
 
